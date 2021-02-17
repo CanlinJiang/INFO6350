@@ -9,7 +9,8 @@ import UIKit
 
 class TableViewController: UITableViewController {
     
-    let cities = ["a", "b", "c", "d", "e", "f", "g"]
+
+    let cities = ["a", "b", "c", "d", "e", "f", "g", "h", "a", "b", "c", "d", "e", "f", "g", "h"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
