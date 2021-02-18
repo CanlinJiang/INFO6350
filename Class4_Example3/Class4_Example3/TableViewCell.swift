@@ -9,8 +9,8 @@ import UIKit
 
 class TableViewCell: UITableViewCell {
 
-    @IBOutlet weak var labelStock: UILabel!
-    @IBOutlet weak var labelValue: UILabel!
+    @IBOutlet weak var labelCity: UILabel!
+    @IBOutlet weak var labelTemperature: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

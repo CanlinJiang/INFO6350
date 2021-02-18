@@ -37,5 +37,9 @@ class ViewController: UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
+    func getStockValue(_ stockSymbol : String?) {
+        
+    }
+    
 }
 
