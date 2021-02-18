@@ -3,6 +3,7 @@
 1. Assignment1: [Show label](https://github.com/CanlinJiang/INFO6350/tree/main/Class1)
 2. Assignment2: [Dice App](https://github.com/CanlinJiang/INFO6350/tree/main/Slot%20Machine)
 3. Assignment3: [Table View](https://github.com/CanlinJiang/INFO6350/tree/main/Class3)
+4. Assignment4: [Github + TableView](https://github.com/CanlinJiang/INFO6350/tree/main/Class4_Example3)
 
 
 ## Class Demo
