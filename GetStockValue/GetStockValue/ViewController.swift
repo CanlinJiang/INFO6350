@@ -53,9 +53,9 @@ class ViewController: UIViewController {
             SwiftSpinner.hide()
             
             if response.error == nil {
-                let stockData: JSON = JSON(response.data!)
+                guard let stockData = response.data else {return}
                 
-                guard let stocks = stockData.array else {return}
+                guard let stocks = JSON(stockData).array else {return}
                 
                 if stocks.count != 0 {
                     for stock in stocks {

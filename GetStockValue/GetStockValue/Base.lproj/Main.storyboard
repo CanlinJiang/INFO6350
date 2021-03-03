@@ -1,58 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zmt-Fi-TYe">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Get Stock Prices-->
+        <scene sceneID="Vwh-pq-jkm">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GetStockValue" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <tableViewController id="krX-Hi-gxS" customClass="StockTableViewController" customModule="GetStockValue" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="dEo-e6-gOG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sG4-HR-GTW">
-                                <rect key="frame" x="153.5" y="433" width="107" height="30"/>
-                                <state key="normal" title="Get Stock Price"/>
-                                <connections>
-                                    <action selector="getStockAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qye-0p-L9E"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L3b-QF-pPE">
-                                <rect key="frame" x="5" y="468" width="404" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="HLH-ZP-dsf"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="L3b-QF-pPE" secondAttribute="trailing" constant="5" id="WCL-lI-pkU"/>
-                            <constraint firstItem="sG4-HR-GTW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="YzI-jU-zc1"/>
-                            <constraint firstItem="L3b-QF-pPE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="hbB-F5-gN7"/>
-                            <constraint firstItem="L3b-QF-pPE" firstAttribute="top" secondItem="sG4-HR-GTW" secondAttribute="bottom" constant="5" id="qKb-N1-gAC"/>
-                            <constraint firstItem="sG4-HR-GTW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="s6p-oO-XnR"/>
-                        </constraints>
-                    </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="1as-vu-rhX">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1as-vu-rhX" id="rFY-Go-Jel">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="krX-Hi-gxS" id="mDN-69-hzg"/>
+                            <outlet property="delegate" destination="krX-Hi-gxS" id="xIZ-RH-bNm"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Get Stock Prices" id="HcG-CI-mfv">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="kiC-I5-0Vg">
+                            <connections>
+                                <action selector="addStock:" destination="krX-Hi-gxS" id="H8w-fj-n9T"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
-                        <outlet property="stockPrice" destination="L3b-QF-pPE" id="fbB-Dy-Job"/>
+                        <outlet property="tableOfStock" destination="dEo-e6-gOG" id="daW-eR-XKH"/>
                     </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2It-sd-y3D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="131.8840579710145" y="115.84821428571428"/>
+            <point key="canvasLocation" x="528.98550724637687" y="19.419642857142858"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wL0-EG-7dv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zmt-Fi-TYe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bHn-Ku-M43">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="krX-Hi-gxS" kind="relationship" relationship="rootViewController" id="Dwg-BJ-U0t"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5n9-72-kR9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-381.15942028985512" y="19.419642857142858"/>
         </scene>
     </scenes>
     <resources>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
