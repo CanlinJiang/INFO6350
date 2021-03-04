@@ -20,10 +20,20 @@ class StockTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//        do {
+//            let realm = try Realm()
+////            try realm.write {
+////                realm.add(stock)
+////            }
+//        } catch {
+//            print("ERROR in initialzing realm")
+//        }
+//        print(Realm.Configuration.defaultConfiguration.fileURL)
+        
     }
     override func viewWillAppear(_ animated: Bool) {
-        getData()
-        
+        //getData()
+        loadReamStocks()
     }
     
     
@@ -49,7 +59,9 @@ class StockTableViewController: UITableViewController {
                     stock.price = stockData["price"].floatValue
                     stock.volume = stockData["volume"].intValue
                     self.stocksArray.append(stock)
+                    print("Current stock: \(stock)")
                     self.addToRealmDataBase(stock)
+                   
                 }
             } else {
                 print(response.error?.localizedDescription)
@@ -95,9 +107,9 @@ class StockTableViewController: UITableViewController {
             if stockSymbol == "" {
                 return
             }
-            print("Symbol: \(stockSymbol)")
+            print("Current Symbol: \(stockSymbol)")
             self.symbolArray.append(stockSymbol)
-            print(self.symbolArray)
+            print("Current Symbol Array: \(self.symbolArray)")
             self.getData()
         }
         let cancel = UIAlertAction(title: "Cancel", style: .cancel) { (alertAction) in
@@ -119,15 +131,38 @@ class StockTableViewController: UITableViewController {
         do {
             let realm = try Realm()
             try realm.write {
-                realm.add(stock)
+                realm.add(stock, update: .all)
             }
         } catch {
             print("ERROR in initialzing realm")
         }
         print(Realm.Configuration.defaultConfiguration.fileURL)
-        
     }
     
- 
+//    func doesStockExist(_ stock: Stock) -> Bool{
+//        let realm = try! Realm()
+//        if realm.object(ofType: Stock.self, forPrimaryKey: stock.symbol) != nil {
+//            return true
+//        } else {
+//            return false
+//        }
+//    }
+    
+    func loadReamStocks(){
+        do {
+            let realm = try! Realm()
+            let stocks = realm.objects(Stock.self)
+            symbolArray.removeAll();
+            for stock in stocks {
+                symbolArray.append(stock.symbol)
+            }
+            getData()
+        } catch {
+            print("Error in loading values from realm database: \(error)")
+        }
+    }
     
 }
+
+    
+
