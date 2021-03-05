@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2CD286D9EFB861A6136F78C0 /* Pods_GetStockValue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A01536D12C66E06EDE5D6304 /* Pods_GetStockValue.framework */; };
+		BF1C968825F1B02500890957 /* ExtensionTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1C968725F1B02500890957 /* ExtensionTableView.swift */; };
+		BF1C969425F1B0CB00890957 /* ExtensionAFFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1C969325F1B0CA00890957 /* ExtensionAFFunctions.swift */; };
+		BF1C969725F1B0F300890957 /* ExtensionRealmFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1C969625F1B0F300890957 /* ExtensionRealmFunctions.swift */; };
 		BFD0571A25EF013F007BA539 /* StockTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD0571925EF013F007BA539 /* StockTableViewController.swift */; };
 		BFD0571E25EF0721007BA539 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD0571C25EF0721007BA539 /* TableViewCell.swift */; };
 		BFD0571F25EF0721007BA539 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFD0571D25EF0721007BA539 /* TableViewCell.xib */; };
@@ -23,6 +26,9 @@
 /* Begin PBXFileReference section */
 		2B9F57ED5BDD447194F300E8 /* Pods-GetStockValue.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetStockValue.debug.xcconfig"; path = "Target Support Files/Pods-GetStockValue/Pods-GetStockValue.debug.xcconfig"; sourceTree = "<group>"; };
 		A01536D12C66E06EDE5D6304 /* Pods_GetStockValue.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GetStockValue.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF1C968725F1B02500890957 /* ExtensionTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionTableView.swift; sourceTree = "<group>"; };
+		BF1C969325F1B0CA00890957 /* ExtensionAFFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionAFFunctions.swift; sourceTree = "<group>"; };
+		BF1C969625F1B0F300890957 /* ExtensionRealmFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionRealmFunctions.swift; sourceTree = "<group>"; };
 		BFD0571925EF013F007BA539 /* StockTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockTableViewController.swift; sourceTree = "<group>"; };
 		BFD0571C25EF0721007BA539 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		BFD0571D25EF0721007BA539 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
@@ -67,6 +73,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BF1C968525F1AFD600890957 /* StockTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BFD0571925EF013F007BA539 /* StockTableViewController.swift */,
+				BF1C969325F1B0CA00890957 /* ExtensionAFFunctions.swift */,
+				BF1C968725F1B02500890957 /* ExtensionTableView.swift */,
+				BF1C969625F1B0F300890957 /* ExtensionRealmFunctions.swift */,
+			);
+			path = StockTableViewController;
+			sourceTree = "<group>";
+		};
+		BF1C968625F1AFF900890957 /* StockTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				BFD0571C25EF0721007BA539 /* TableViewCell.swift */,
+				BFD0571D25EF0721007BA539 /* TableViewCell.xib */,
+			);
+			path = StockTableViewCell;
+			sourceTree = "<group>";
+		};
 		BFEAD72A25DE054900BB33BC = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +114,8 @@
 		BFEAD73525DE054900BB33BC /* GetStockValue */ = {
 			isa = PBXGroup;
 			children = (
+				BF1C968525F1AFD600890957 /* StockTableViewController */,
+				BF1C968625F1AFF900890957 /* StockTableViewCell */,
 				BFEAD74B25DE056800BB33BC /* Constants.swift */,
 				BFEAD73625DE054900BB33BC /* AppDelegate.swift */,
 				BFEAD73825DE054900BB33BC /* SceneDelegate.swift */,
@@ -95,9 +123,6 @@
 				BFEAD73F25DE054A00BB33BC /* Assets.xcassets */,
 				BFEAD74125DE054A00BB33BC /* LaunchScreen.storyboard */,
 				BFEAD74425DE054A00BB33BC /* Info.plist */,
-				BFD0571925EF013F007BA539 /* StockTableViewController.swift */,
-				BFD0571C25EF0721007BA539 /* TableViewCell.swift */,
-				BFD0571D25EF0721007BA539 /* TableViewCell.xib */,
 				BFD0572125EF090A007BA539 /* Stock.swift */,
 			);
 			path = GetStockValue;
@@ -219,9 +244,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFEAD73725DE054900BB33BC /* AppDelegate.swift in Sources */,
+				BF1C968825F1B02500890957 /* ExtensionTableView.swift in Sources */,
+				BF1C969425F1B0CB00890957 /* ExtensionAFFunctions.swift in Sources */,
 				BFEAD73925DE054900BB33BC /* SceneDelegate.swift in Sources */,
 				BFD0572225EF090A007BA539 /* Stock.swift in Sources */,
 				BFD0571E25EF0721007BA539 /* TableViewCell.swift in Sources */,
+				BF1C969725F1B0F300890957 /* ExtensionRealmFunctions.swift in Sources */,
 				BFD0571A25EF013F007BA539 /* StockTableViewController.swift in Sources */,
 				BFEAD74C25DE056800BB33BC /* Constants.swift in Sources */,
 			);
