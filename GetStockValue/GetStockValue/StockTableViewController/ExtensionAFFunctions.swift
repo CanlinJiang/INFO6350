@@ -88,7 +88,7 @@ extension StockTableViewController {
                 var stocksDataInArray = [Stock]()
                 guard let data = response.data else {return seal.fulfill(stocksDataInArray)}
                 guard let stocksData = JSON(data).array else{return seal.fulfill(stocksDataInArray)}
-                self.stocksArray.removeAll()
+                //self.stocksArray.removeAll()
                 for stockData in stocksData {
                     let stock = Stock();
                     stock.symbol = stockData["symbol"].stringValue
