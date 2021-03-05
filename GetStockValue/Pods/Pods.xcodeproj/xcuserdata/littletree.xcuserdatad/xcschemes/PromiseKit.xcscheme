@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "68494F30B4A13F8E5E88BCCAEC25B0A4"
-               BuildableName = "Realm.framework"
-               BlueprintName = "Realm"
+               BlueprintIdentifier = "7C579CE66A1E7A9AA33CA5F97F9C22C5"
+               BuildableName = "PromiseKit.framework"
+               BlueprintName = "PromiseKit"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

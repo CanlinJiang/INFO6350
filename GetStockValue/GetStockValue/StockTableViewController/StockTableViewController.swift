@@ -44,9 +44,10 @@ class StockTableViewController: UITableViewController {
             let stock = stocksArray[indexPath.row]
             print("curr row\(indexPath.row)")
             
+            stocksArray.remove(at: indexPath.row)
             deleteFromRealmDataBase(stock)
-            //tableView.deleteRows(at: [indexPath], with: .fade)
-            loadRealmStock();
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            //loadRealmStock();
         }
     }
     

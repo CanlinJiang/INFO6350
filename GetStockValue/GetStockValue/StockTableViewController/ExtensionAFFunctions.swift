@@ -11,7 +11,7 @@ import Alamofire
 import SwiftSpinner
 import SwiftyJSON
 import RealmSwift
-
+import PromiseKit
 
 
 extension StockTableViewController {
@@ -21,9 +21,26 @@ extension StockTableViewController {
         }
         let url = getURL();
         
-        SwiftSpinner.show("Getting Stock Values")
+        getQuickShortQuote(url)
+            .done { (stocks) in
+                if stocks.count == 0{
+                    return
+                }
+                self.stocksArray.removeAll()
+                for stock in stocks{
+                    self.stocksArray.append(stock)
+                    self.addToRealmDataBase(stock)
+                }
+                self.tableOfStock.reloadData();
+            }
+            .catch { (error) in
+                print(error)
+            }
+        
+        /*
+        //SwiftSpinner.show("Getting Stock Values")
         AF.request(url).responseJSON{response in
-            SwiftSpinner.hide()
+            //SwiftSpinner.hide()
             if response.error == nil {
                 guard let data = response.data else {return}
                 guard let stocksData = JSON(data).array else{return}
@@ -45,7 +62,7 @@ extension StockTableViewController {
                 print(response.error?.localizedDescription)
             }
             self.tableOfStock.reloadData();
-        }
+        }*/
     }
     
     func getURL() -> String {
@@ -59,5 +76,33 @@ extension StockTableViewController {
         
         return url;
     }
-
+    
+    func getQuickShortQuote(_ url : String) -> Promise<[Stock]> {
+        
+    
+    return Promise<[Stock]> { seal -> Void in
+        SwiftSpinner.show("Getting Stock Values")
+        AF.request(url).responseJSON{response in
+            SwiftSpinner.hide()
+            if response.error == nil {
+                var stocksDataInArray = [Stock]()
+                guard let data = response.data else {return seal.fulfill(stocksDataInArray)}
+                guard let stocksData = JSON(data).array else{return seal.fulfill(stocksDataInArray)}
+                self.stocksArray.removeAll()
+                for stockData in stocksData {
+                    let stock = Stock();
+                    stock.symbol = stockData["symbol"].stringValue
+                    stock.price = stockData["price"].floatValue
+                    stock.volume = stockData["volume"].intValue
+                    stocksDataInArray.append(stock)
+                }
+                seal.fulfill(stocksDataInArray)
+            } else {
+                seal.reject(response.error!)
+                
+            }
+            
+        }
+    }
+    }
 }
