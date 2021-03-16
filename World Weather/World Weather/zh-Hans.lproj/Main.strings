@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "temp"; ObjectID = "ER7-bw-Gla"; */
+"ER7-bw-Gla.text" = "temp";
+
+/* Class = "UILabel"; text = "city"; ObjectID = "QkH-ge-0D0"; */
+"QkH-ge-0D0.text" = "city";
+
+/* Class = "UILabel"; text = "condition"; ObjectID = "f56-12-cpW"; */
+"f56-12-cpW.text" = "condition";
+
+/* Class = "UILabel"; text = "high low"; ObjectID = "pbE-zb-Y4V"; */
+"pbE-zb-Y4V.text" = "high low";

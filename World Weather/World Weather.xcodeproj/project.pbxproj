@@ -3,11 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		6A9447CC8C25D335940C2C74 /* Pods_World_Weather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 037462A8F1FFDB49CCD2F4D3 /* Pods_World_Weather.framework */; };
+		BF101A0126011BEE00272582 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF101A0326011BEE00272582 /* Localizable.strings */; };
+		BF101A0926011C7F00272582 /* localizationUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF101A0826011C7F00272582 /* localizationUtilities.swift */; };
 		BF26F67725F834B6009B8324 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF26F67625F834B6009B8324 /* AppDelegate.swift */; };
 		BF26F67925F834B6009B8324 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF26F67825F834B6009B8324 /* SceneDelegate.swift */; };
 		BF26F67B25F834B6009B8324 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF26F67A25F834B6009B8324 /* ViewController.swift */; };
@@ -15,12 +17,20 @@
 		BF26F68025F834B7009B8324 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF26F67F25F834B7009B8324 /* Assets.xcassets */; };
 		BF26F68325F834B7009B8324 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF26F68125F834B7009B8324 /* LaunchScreen.storyboard */; };
 		BF26F68C25F834F6009B8324 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF26F68B25F834F6009B8324 /* constants.swift */; };
+		BFBC0B2125FA9C4900D7A305 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBC0B2025FA9C4900D7A305 /* Forecast.swift */; };
+		BFBC0B3625FAD3B900D7A305 /* fiveDaysForecastsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBC0B3425FAD3B900D7A305 /* fiveDaysForecastsTableViewCell.swift */; };
+		BFBC0B3725FAD3B900D7A305 /* fiveDaysForecastsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFBC0B3525FAD3B900D7A305 /* fiveDaysForecastsTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0227956E64069EBBF0589171 /* Pods-World Weather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-World Weather.release.xcconfig"; path = "Target Support Files/Pods-World Weather/Pods-World Weather.release.xcconfig"; sourceTree = "<group>"; };
 		037462A8F1FFDB49CCD2F4D3 /* Pods_World_Weather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_World_Weather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A707719F710548E5B051276 /* Pods-World Weather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-World Weather.debug.xcconfig"; path = "Target Support Files/Pods-World Weather/Pods-World Weather.debug.xcconfig"; sourceTree = "<group>"; };
+		BF1019F926011B1300272582 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		BF1019FA26011B1300272582 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		BF101A0526011BF000272582 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BF101A0626011C3100272582 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		BF101A0826011C7F00272582 /* localizationUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = localizationUtilities.swift; sourceTree = "<group>"; };
 		BF26F67325F834B6009B8324 /* World Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "World Weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF26F67625F834B6009B8324 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF26F67825F834B6009B8324 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +40,9 @@
 		BF26F68225F834B7009B8324 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF26F68425F834B7009B8324 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF26F68B25F834F6009B8324 /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
+		BFBC0B2025FA9C4900D7A305 /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
+		BFBC0B3425FAD3B900D7A305 /* fiveDaysForecastsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fiveDaysForecastsTableViewCell.swift; sourceTree = "<group>"; };
+		BFBC0B3525FAD3B900D7A305 /* fiveDaysForecastsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = fiveDaysForecastsTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,8 +63,23 @@
 				7A707719F710548E5B051276 /* Pods-World Weather.debug.xcconfig */,
 				0227956E64069EBBF0589171 /* Pods-World Weather.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		BF1019FC26011B1D00272582 /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				BF101A0326011BEE00272582 /* Localizable.strings */,
+			);
+			path = Localizable;
+			sourceTree = "<group>";
+		};
+		BF101A0726011C6A00272582 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				BF101A0826011C7F00272582 /* localizationUtilities.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		BF26F66A25F834B6009B8324 = {
@@ -75,14 +103,19 @@
 		BF26F67525F834B6009B8324 /* World Weather */ = {
 			isa = PBXGroup;
 			children = (
+				BF101A0726011C6A00272582 /* Utilities */,
+				BF1019FC26011B1D00272582 /* Localizable */,
 				BF26F67625F834B6009B8324 /* AppDelegate.swift */,
 				BF26F67825F834B6009B8324 /* SceneDelegate.swift */,
 				BF26F67A25F834B6009B8324 /* ViewController.swift */,
+				BFBC0B3425FAD3B900D7A305 /* fiveDaysForecastsTableViewCell.swift */,
+				BFBC0B3525FAD3B900D7A305 /* fiveDaysForecastsTableViewCell.xib */,
 				BF26F67C25F834B6009B8324 /* Main.storyboard */,
 				BF26F67F25F834B7009B8324 /* Assets.xcassets */,
 				BF26F68125F834B7009B8324 /* LaunchScreen.storyboard */,
 				BF26F68B25F834F6009B8324 /* constants.swift */,
 				BF26F68425F834B7009B8324 /* Info.plist */,
+				BFBC0B2025FA9C4900D7A305 /* Forecast.swift */,
 			);
 			path = "World Weather";
 			sourceTree = "<group>";
@@ -138,6 +171,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = BF26F66A25F834B6009B8324;
 			productRefGroup = BF26F67425F834B6009B8324 /* Products */;
@@ -154,9 +188,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF101A0126011BEE00272582 /* Localizable.strings in Resources */,
 				BF26F68325F834B7009B8324 /* LaunchScreen.storyboard in Resources */,
 				BF26F68025F834B7009B8324 /* Assets.xcassets in Resources */,
 				BF26F67E25F834B6009B8324 /* Main.storyboard in Resources */,
+				BFBC0B3725FAD3B900D7A305 /* fiveDaysForecastsTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,20 +245,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF101A0926011C7F00272582 /* localizationUtilities.swift in Sources */,
 				BF26F67B25F834B6009B8324 /* ViewController.swift in Sources */,
 				BF26F67725F834B6009B8324 /* AppDelegate.swift in Sources */,
 				BF26F67925F834B6009B8324 /* SceneDelegate.swift in Sources */,
+				BFBC0B3625FAD3B900D7A305 /* fiveDaysForecastsTableViewCell.swift in Sources */,
 				BF26F68C25F834F6009B8324 /* constants.swift in Sources */,
+				BFBC0B2125FA9C4900D7A305 /* Forecast.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		BF101A0326011BEE00272582 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF101A0526011BF000272582 /* en */,
+				BF101A0626011C3100272582 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		BF26F67C25F834B6009B8324 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				BF26F67D25F834B6009B8324 /* Base */,
+				BF1019F926011B1300272582 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -231,6 +280,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				BF26F68225F834B7009B8324 /* Base */,
+				BF1019FA26011B1300272582 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -242,6 +292,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -303,6 +354,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
