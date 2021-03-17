@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "DF6D078B-1AAA-47B8-B919-55513F5235DF"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FD5DD97A-568E-42DB-8682-7CE70A4283E6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "World Weather/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
+            landmarkName = "updateWeather(_:_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "FD5DD97A-568E-42DB-8682-7CE70A4283E6 - 55f0605fd4300f7e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.String, Swift.String) -&gt; () in World_Weather.ViewController.updateWeather(Swift.Double, Swift.Double) -&gt; ()"
+                  moduleName = "World Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/littletree/Documents/GitHub/INFO6350/World%20Weather/World%20Weather/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "101"
+                  endingLineNumber = "101"
+                  offsetFromSymbolStart = "1853">
+               </Location>
+               <Location
+                  uuid = "FD5DD97A-568E-42DB-8682-7CE70A4283E6 - fd3baadefc5c5aa9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #5 (Swift.Array&lt;World_Weather.Forecast&gt;) -&gt; () in closure #1 (Swift.String, Swift.String) -&gt; () in World_Weather.ViewController.updateWeather(Swift.Double, Swift.Double) -&gt; ()"
+                  moduleName = "World Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/littletree/Documents/GitHub/INFO6350/World%20Weather/World%20Weather/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "102"
+                  endingLineNumber = "102"
+                  offsetFromSymbolStart = "155">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

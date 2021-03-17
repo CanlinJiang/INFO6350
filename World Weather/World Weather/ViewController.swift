@@ -179,9 +179,9 @@ extension ViewController {
                     seal.reject(response.error!)
                 }
                 
-                guard let responseJson = JSON(response.data).array else {return seal.fulfill(("", 0))}
-                let weather = responseJson[0]["WeatherText"].stringValue
-                let temperature = responseJson[0]["Temperature"]["Imperial"]["Value"].intValue
+                guard let responseJSONArray = JSON(response.data).array else {return seal.fulfill(("", 0))}
+                let weather = responseJSONArray[0]["WeatherText"].stringValue
+                let temperature = responseJSONArray[0]["Temperature"]["Imperial"]["Value"].intValue
                 seal.fulfill((weather, temperature))
             }
             
