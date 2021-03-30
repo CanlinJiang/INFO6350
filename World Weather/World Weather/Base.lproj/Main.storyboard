@@ -41,7 +41,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AoM-9e-qG6">
-                                <rect key="frame" x="5" y="319" width="404" height="513"/>
+                                <rect key="frame" x="5" y="429" width="404" height="403"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="48" id="yxT-mX-KLs">
@@ -54,13 +54,6 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NWF-fO-T8F">
-                                <rect key="frame" x="5" y="257" width="404" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -74,7 +67,7 @@
                             <constraint firstItem="pbE-zb-Y4V" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="5" id="aFK-xS-UGc"/>
                             <constraint firstAttribute="trailing" secondItem="AoM-9e-qG6" secondAttribute="trailing" constant="5" id="eh6-2V-Cyh"/>
                             <constraint firstItem="ER7-bw-Gla" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="fMR-Xr-5MO"/>
-                            <constraint firstItem="AoM-9e-qG6" firstAttribute="top" secondItem="pbE-zb-Y4V" secondAttribute="bottom" constant="70" id="fSc-Pv-RcZ"/>
+                            <constraint firstItem="AoM-9e-qG6" firstAttribute="top" secondItem="pbE-zb-Y4V" secondAttribute="bottom" constant="180" id="fSc-Pv-RcZ"/>
                             <constraint firstItem="ER7-bw-Gla" firstAttribute="top" secondItem="f56-12-cpW" secondAttribute="bottom" id="jaq-gO-DxK"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="f56-12-cpW" secondAttribute="trailing" constant="5" id="kHW-3e-Lyd"/>
                             <constraint firstItem="QkH-ge-0D0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="n0D-dC-U7F"/>
@@ -86,7 +79,6 @@
                     <connections>
                         <outlet property="lblCity" destination="QkH-ge-0D0" id="2pe-VZ-isJ"/>
                         <outlet property="lblCondition" destination="f56-12-cpW" id="T0M-aH-qFq"/>
-                        <outlet property="lblHelloWorld" destination="NWF-fO-T8F" id="KEY-NE-bKs"/>
                         <outlet property="lblHighLow" destination="pbE-zb-Y4V" id="jzQ-MF-o8a"/>
                         <outlet property="lblTemperature" destination="ER7-bw-Gla" id="5Kd-5U-72t"/>
                         <outlet property="tblView" destination="AoM-9e-qG6" id="2DT-YH-FQA"/>

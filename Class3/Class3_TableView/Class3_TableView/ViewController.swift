@@ -57,8 +57,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                  "Wilson, Woodrow "]
     override func viewDidLoad() {
         super.viewDidLoad()
-        tblView.delegate = self
-        tblView.dataSource = self
+        tblView.delegate = self //!
+        tblView.dataSource = self //!
     
     }
 

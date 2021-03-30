@@ -32,7 +32,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UITableViewDe
     
     @IBOutlet weak var lblHelloWorld: UILabel!
     func initializeText(){
-        lblHelloWorld.text = strHelloWorld
+        
     }
     
     //Table view of 5 days forecast
