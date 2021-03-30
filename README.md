@@ -15,6 +15,13 @@
 - [show alert](https://github.com/CanlinJiang/INFO6350/tree/main/Class4_example2)
 - [Navigation controller & refresh & add alert & delete row & realm & extension: Get Stock Value](https://github.com/CanlinJiang/INFO6350/tree/main/GetStockValue)
 
+## Formatting and segue
+- [segue & login](https://github.com/CanlinJiang/INFO6350/tree/main/LoginProject)
+- [Navigation controller & refresh & add alert & delete row & realm & extension: Get Stock Value](https://github.com/CanlinJiang/INFO6350/tree/main/GetStockValue)
+
+## Localization
+- [manage files & localization - weather app](https://github.com/CanlinJiang/INFO6350/tree/main/WorldWeather2)
+
 ## Get API from REST
 - [Get data from REST Api: AF & swiftJson & swiftSpinner](https://github.com/CanlinJiang/INFO6350/tree/main/Class5)
 - [PromiseKit & Realm](https://github.com/CanlinJiang/INFO6350/tree/main/Class6)
@@ -22,15 +29,9 @@
 
 ## Location 
 - [location manager - weather app](https://github.com/CanlinJiang/INFO6350/tree/main/World%20Weather)
+- [managed files and background - weather app](https://github.com/CanlinJiang/Spring-2021-Smartphone/tree/main/WorldWeather)
 
-## Localization
-- [manage files & localization - weather app](https://github.com/CanlinJiang/INFO6350/tree/main/WorldWeather2)
-
-## Navigation & segue
-- [segue & login](https://github.com/CanlinJiang/INFO6350/tree/main/LoginProject)
-- [Navigation controller & refresh & add alert & delete row & realm & extension: Get Stock Value](https://github.com/CanlinJiang/INFO6350/tree/main/GetStockValue)
-
-## Formatting
+## Manage files
 - [managed files and background - weather app](https://github.com/CanlinJiang/Spring-2021-Smartphone/tree/main/WorldWeather)
 - [manage files & localization - weather app](https://github.com/CanlinJiang/INFO6350/tree/main/WorldWeather2)
 
