@@ -43,7 +43,7 @@ class WorldWeatherViewController: UIViewController, CLLocationManagerDelegate {
         if let currLocation = locations.last{
             let latitude = currLocation.coordinate.latitude
             let longitude = currLocation.coordinate.longitude
-            updateWeather(latitude, longitude)
+            //updateWeather(latitude, longitude)
         }
     }
     

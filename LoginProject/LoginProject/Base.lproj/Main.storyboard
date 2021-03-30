@@ -34,6 +34,7 @@
                                 <state key="normal" title="Login"/>
                                 <connections>
                                     <action selector="loginFunction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qnJ-LZ-slL"/>
+                                    <segue destination="a1O-GE-8YU" kind="show" identifier="loginSegue" id="LzQ-ZX-1Ob"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cej-Dj-Ee6">
@@ -52,7 +53,6 @@
                         <outlet property="lblStatus" destination="Cej-Dj-Ee6" id="HM9-nH-227"/>
                         <outlet property="txtEmail" destination="NSi-Vc-tpB" id="UnJ-Y9-Amh"/>
                         <outlet property="txtPassword" destination="Mt7-Lk-agh" id="MjO-b8-Z2S"/>
-                        <segue destination="a1O-GE-8YU" kind="show" identifier="loginSegue" id="YEY-iw-7dN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

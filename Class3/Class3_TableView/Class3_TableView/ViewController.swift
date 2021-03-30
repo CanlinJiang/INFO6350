@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource//!{
     
     @IBOutlet weak var tblView: UITableView!
     let names = ["Adams, John ",

@@ -60,8 +60,9 @@ class TitlesTableViewController: UITableViewController {
             } else {
                 print(response.error?.localizedDescription)
             }
-            self.titlesTableView.reloadData()
+            self.titlesTableView.reloadData()//!
+            print("HEREE \(self.titileArray.count)")
         }
-        print("HEREE \(self.titileArray.count)")
+        
     }
 }

@@ -34,12 +34,12 @@ class StockTableViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         //getData()
         loadRealmStock()
-        let refreshControl = UIRefreshControl()
+        let refreshControl = UIRefreshControl() //refresh
         refreshControl.addTarget(self, action: #selector(loadRealmStock), for: .valueChanged)
         self.refreshControl = refreshControl
     }
     
-    override func tableView(_ tableView : UITableView, commit editingStyle: UITableViewCell.EditingStyle , forRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView : UITableView, commit editingStyle: UITableViewCell.EditingStyle , forRowAt indexPath: IndexPath) { //delete
         if editingStyle == .delete {
             let stock = stocksArray[indexPath.row]
             print("curr row\(indexPath.row)")
@@ -77,10 +77,11 @@ class StockTableViewController: UITableViewController {
             self.globalStockTextField = stockTextField
         }
         
-        alert.addAction(OK)
         alert.addAction(cancel)
+        alert.addAction(OK)
         
-        self.present(alert, animated: true, completion: nil)
+        
+        self.present(alert, animated: true, completion: nil) //!
     }
     
 

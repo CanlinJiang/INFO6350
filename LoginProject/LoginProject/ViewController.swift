@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func loginFunction(_ sender: Any) {
-        performSegue(withIdentifier: "loginSegue", sender: self)
+        performSegue(withIdentifier: "loginSegue", sender: self)//各种类型https://stackoverflow.com/questions/25966215/whats-the-difference-between-all-the-selection-segues
 //        let email = txtEmail.text!
 //        let password = txtPassword.text!
 //
