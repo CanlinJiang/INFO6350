@@ -10,3 +10,6 @@
 ### Class 4:
 1. [Tabel View Xib](https://github.com/CanlinJiang/INFO6350/tree/main/Class4_example)
 2. [Alert Action Button](https://github.com/CanlinJiang/INFO6350/tree/main/Class4_example2)
+
+# Info 6350
+- [Change Icon](https://github.com/CanlinJiang/INFO6350/tree/main/Class1)
