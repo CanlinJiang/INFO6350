@@ -7,6 +7,9 @@
 
 ## Table view
 - [UITableView](https://github.com/CanlinJiang/INFO6350/tree/main/Class3)
+
+### Cocoa:
+*change class and identifier*
 - [Cocoa table view](https://github.com/CanlinJiang/INFO6350/tree/main/Class4_example)
 - [Cocoa table view xib cell](https://github.com/CanlinJiang/INFO6350/tree/main/Class4_Example3)
 - [Cocoa table view xib cell + icon](https://github.com/CanlinJiang/INFO6350/tree/main/tableViewExample)
@@ -23,6 +26,7 @@
 - [manage files & localization - weather app](https://github.com/CanlinJiang/INFO6350/tree/main/WorldWeather2)
 
 ## Get API from REST
+*load data within* **done**
 - [Get data from REST Api: AF & swiftJson & swiftSpinner](https://github.com/CanlinJiang/INFO6350/tree/main/Class5)
 - [PromiseKit & Realm](https://github.com/CanlinJiang/INFO6350/tree/main/Class6)
 - [Navigation controller & refresh & add alert & delete row & realm & extension: Get Stock Value](https://github.com/CanlinJiang/INFO6350/tree/main/GetStockValue)
