@@ -79,7 +79,6 @@ extension StockTableViewController {
     
     func getQuickShortQuote(_ url : String) -> Promise<[Stock]> {
         
-    
     return Promise<[Stock]> { seal -> Void in
         SwiftSpinner.show("Getting Stock Values")
         AF.request(url).responseJSON{response in
