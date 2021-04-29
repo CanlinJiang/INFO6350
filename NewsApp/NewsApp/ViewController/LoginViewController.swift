@@ -21,7 +21,7 @@ class LoginViewController: UIViewController, FUIAuthDelegate {
         let authenticationUI = FUIAuth.defaultAuthUI();
         
         authenticationUI?.delegate = self
-        authenticationUI?.providers = [FUIEmailAuth()]
+        authenticationUI?.providers = [FUIEmailAuth(), FUIFacebookAuth(), FUIGoogleAuth()]
         
         guard let authenticationViewController = authenticationUI?.authViewController() else { return }
         present(authenticationViewController, animated: true, completion: nil)

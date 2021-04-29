@@ -77,7 +77,7 @@
         func getNewsFromDB() {
             let db = Firestore.firestore()
             
-            self.listener = db.collection(userId).addSnapshotListener() { snapshot, error in
+            self.listener = db.collection(userId!).addSnapshotListener() { snapshot, error in
                 
                 if error == nil && snapshot != nil {
                     var newsList = [News]()
@@ -99,13 +99,13 @@
         
         func deleteNewsFromDB(_ news: News) {
             let db = Firestore.firestore()
-            db.collection(userId).document(news.newsId!).delete()
+            db.collection(userId!).document(news.newsId!).delete()
         }
         
         func saveNewsToDB(_ news: News) {
             let db = Firestore.firestore()
             
-            db.collection(userId).document(news.newsId!).setData(newsToDictionary(news), merge: true)
+            db.collection(userId!).document(news.newsId!).setData(newsToDictionary(news), merge: true)
         }
         
         func newsToDictionary(_ news: News) -> [String:Any]  {

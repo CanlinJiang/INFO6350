@@ -13,5 +13,7 @@ target 'NewsApp' do
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
   pod 'Firebase/Analytics'
+  pod 'FBSDKLoginKit'
+  pod 'GoogleSignIn'
 
 end

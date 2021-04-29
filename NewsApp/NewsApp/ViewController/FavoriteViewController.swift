@@ -55,7 +55,7 @@ extension FavoriteViewController: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: goToNewsDetaileSegueFav, sender: self)
+        performSegue(withIdentifier: goToNewsDetaileSegueFavorite, sender: self)
     }
     
     

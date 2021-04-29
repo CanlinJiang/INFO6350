@@ -26,6 +26,7 @@
 		BF771A0B263ACB2C004039F9 /* ArticlesHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF771A0A263ACB2C004039F9 /* ArticlesHelper.swift */; };
 		BF771A0E263AE2AC004039F9 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF771A0D263AE2AC004039F9 /* News.swift */; };
 		BF771A10263B09AE004039F9 /* AddNewContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF771A0F263B09AE004039F9 /* AddNewContentViewController.swift */; };
+		BF771A12263B47DF004039F9 /* SignOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF771A11263B47DF004039F9 /* SignOutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		BF771A0A263ACB2C004039F9 /* ArticlesHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesHelper.swift; sourceTree = "<group>"; };
 		BF771A0D263AE2AC004039F9 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		BF771A0F263B09AE004039F9 /* AddNewContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewContentViewController.swift; sourceTree = "<group>"; };
+		BF771A11263B47DF004039F9 /* SignOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 				BF3C05E8263A87F200FB0034 /* FavoriteViewController.swift */,
 				BF3C05DC263A786900FB0034 /* LoginViewController.swift */,
 				BF771A0F263B09AE004039F9 /* AddNewContentViewController.swift */,
+				BF771A11263B47DF004039F9 /* SignOutViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				BF771A03263A9D9D004039F9 /* NewsModel.swift in Sources */,
 				BF771A07263A9EA3004039F9 /* NewsDetailViewController.swift in Sources */,
 				BF771A0B263ACB2C004039F9 /* ArticlesHelper.swift in Sources */,
+				BF771A12263B47DF004039F9 /* SignOutViewController.swift in Sources */,
 				BF3C05C7263A71DF00FB0034 /* SceneDelegate.swift in Sources */,
 				BF771A04263A9D9D004039F9 /* articles.swift in Sources */,
 				BF771A10263B09AE004039F9 /* AddNewContentViewController.swift in Sources */,
