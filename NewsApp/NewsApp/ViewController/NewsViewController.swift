@@ -16,6 +16,7 @@ class NewsViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "Random News";
         newsTableView.delegate = self
         newsTableView.dataSource = self
         model.delegate = self
@@ -70,13 +71,8 @@ extension NewsViewController: UITableViewDelegate, UITableViewDataSource{
         }
         save.backgroundColor = UIColor.systemOrange
         
-        let delete = UITableViewRowAction(style: .default, title: "Delete") { (action, indexPath) in
-            self.newsList.remove(at: indexPath.row)
-            self.newsTableView.reloadData()
-        }
-        delete.backgroundColor = UIColor.systemGreen
         
-        return [save, delete]
+        return [save]
     }
 }
 

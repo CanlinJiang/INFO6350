@@ -16,6 +16,7 @@ class FavoriteViewController: UIViewController {
     @IBOutlet weak var newsTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "Favorite News";
         newsTableView.delegate = self
         newsTableView.dataSource = self
         model.delegate = self
