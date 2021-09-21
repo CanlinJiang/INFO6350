@@ -1,8 +1,7 @@
 # Info 6350
---
 ## News App:[here](https://github.com/CanlinJiang/iOSApps/tree/main/NewsApp)
 ## Weather App:[here](https://github.com/CanlinJiang/iOSApps/tree/main/World%20Weather)
---
+
 ## Icon and image
 - [Change Icon](https://github.com/CanlinJiang/INFO6350/tree/main/Class1)
 - [UIImage & button & random](https://github.com/CanlinJiang/INFO6350/tree/main/Slot%20Machine)
