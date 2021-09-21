@@ -1,4 +1,4 @@
-# Info 6350
+# iOS Learning
 - News App:[here](https://github.com/CanlinJiang/iOSApps/tree/main/NewsApp)
 - Weather App:[here](https://github.com/CanlinJiang/iOSApps/tree/main/World%20Weather)
 
